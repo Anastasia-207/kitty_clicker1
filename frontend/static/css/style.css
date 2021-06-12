@@ -1,0 +1,110 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.clicker .kitty {
+    width: 30em;
+    height: 30em;
+    transition: transform ease-out 1s;
+    padding-top: 30px;
+}
+
+.kitty:hover,
+.boost-holder:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.kitty:active {
+    opacity: 1;
+}
+
+.clicker .kitty:active {
+    transform: scale(1.06) rotate(15deg);
+}
+
+.boost-holder[disabled] {
+    opacity: 0.4;
+}
+
+.boosts-place {
+    flex: 1 0;
+}
+
+.boost-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.clicker {
+    flex: 2 0;
+}
+
+.boost-holder {
+    display: flex;
+    flex-direction: column;
+    background: #db0e7f;
+    border-radius: 20px;
+    margin: 5px;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.boost-holder.auto-click {
+    background-color: #15b6de;
+}
+
+.boost-holder p,
+.kitty.boost {
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+
+.kitty.boost {
+    width: 70px;
+    height: 60px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom-left-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.boost-holder.auto-click .kitty.boost {
+    width: 50px;
+    height: 50px;
+}
+
+.status {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.click-power, .auto-click-power {
+    margin: 0;
+    padding: 10px 10px 5px 10px;
+    font-size: 20px;
+}
+
+.clicker p, .logout {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.coins {
+    font-size: 24px;
+}
+
+.clicker .kitty, .coins {
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+.logout a {
+    color: white;
+}

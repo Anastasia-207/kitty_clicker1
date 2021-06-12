@@ -1,0 +1,9 @@
+body {
+    background: url("/static/images/background.png");
+}
+
+.text, p label {
+    text-shadow: black 1px 1px 0, black -1px -1px 0,
+    black -1px 1px 0, black 1px -1px 0;
+    color: #76ece8;
+}
